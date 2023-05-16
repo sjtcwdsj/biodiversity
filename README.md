@@ -9,5 +9,6 @@ ii) Location of species habitat loss due to urban and rural expansion from 1990 
 
 Annual urban or rural encroachment on species habitat (in pixels) is temporarily available at
 https://drive.google.com/drive/folders/1ttj8xUfTvwarCHdzVRty5enu0K065_Eq?usp=sharing
+Data description and code are still being collated.
 
 ## be continued
