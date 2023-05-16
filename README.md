@@ -7,4 +7,7 @@ i) Habitat ranges of different endangered species were calculated based on habit
 ii) Location of species habitat loss due to urban and rural expansion from 1990 to 2020 based on CLCD and habitat range calculation.
 
 
+Annual urban or rural encroachment on species habitat (in pixels) is temporarily available at
+https://drive.google.com/drive/folders/1ttj8xUfTvwarCHdzVRty5enu0K065_Eq?usp=sharing
+
 ## be continued
