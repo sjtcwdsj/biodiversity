@@ -16,5 +16,27 @@ ii) "loss_direct_fix": direct habitat expansion caused by urban and rural built-
 
 We classified the habitats of different endangered species (VU,NT,EN,CR [https://www.iucnredlist.org/](https://www.iucnredlist.org/)).
 
+The data consists of a csv file named "{ID}_id/td.csv". 
+We divided the whole of China into 447 regions, and the region ranges are stored in patchs/patchs.shp, where {ID} corresponds to the ID column in the patchs.shp property table.
+patchs/IDinfo.csv stores the number of rows and columns of the raster after converting these regions into a 30m × 30m resolution raster, which is used to locate all identified pixels.
+By storing pixel information from damaged habitats in this way, we can reduce the storage space to some extent.
+
+The meanings of the columns in the csv file are as follows (Each row represents a damaged habitat pixel):
+| row     | col     | value   |cityinfo|year|{VU/NT/EN/CR}_num|
+| -------- | -------- | -------- |-------- |-------- |-------- |
+| Row of pixel | Col of pixel |  | Land cover type of pixel* |The proportion of built-up area in the surrounding 900m × 900m range is used to assess whether the pixel loss is attributable to the countryside | The abundance of species at that pixel |
+
+* The types represented by different values are as follows:
+1 Cropland
+2 Forest
+3 Shrub 
+4 Grassland 
+5 Water
+6 Sonw/Ice 
+7 Barren 
+8 Impervious
+9 Wetland 
+
+
 
 ## be continued
