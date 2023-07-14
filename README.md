@@ -21,6 +21,7 @@ We divided the whole of China into 447 regions, and the region ranges are stored
 patchs/IDinfo.csv stores the number of rows and columns of the raster after converting these regions into a 30m × 30m resolution raster, which is used to locate all identified pixels.
 By storing pixel information from damaged habitats in this way, we can reduce the storage space to some extent.
 The proj4 of projection coordinate system of patchs.shp is always: **+proj=lcc +lat_0=0 +lon_0=105 +lat_1=30 +lat_2=62 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs**
+
 sample.py provides a sample code for converting csv data to tif format.
 
 The meanings of the columns in the csv file are as follows (Each row represents a damaged habitat pixel):
