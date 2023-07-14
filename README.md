@@ -9,6 +9,12 @@ ii) Location of species habitat loss due to urban and rural expansion from 1990 
 
 Annual urban or rural encroachment on species habitat (in pixels) is temporarily available at
 https://drive.google.com/drive/folders/1ttj8xUfTvwarCHdzVRty5enu0K065_Eq?usp=sharing
-Data description and code are still being collated.
+
+Habitat loss data includes two parts:
+i) "loss_indirect_fix": indirect habitat expansion caused by urban and rural built-up land expansion.
+ii) "loss_direct_fix": direct habitat expansion caused by urban and rural built-up land expansion.
+
+We classified the habitats of different endangered species (VU,NT,EN,CR [https://www.iucnredlist.org/](https://www.iucnredlist.org/)).
+
 
 ## be continued
