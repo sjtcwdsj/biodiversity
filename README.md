@@ -24,7 +24,7 @@ By storing pixel information from damaged habitats in this way, we can reduce th
 The meanings of the columns in the csv file are as follows (Each row represents a damaged habitat pixel):
 | row     | col     | value   |cityinfo|year|{VU/NT/EN/CR}_num|
 | -------- | -------- | -------- |-------- |-------- |-------- |
-| Row of pixel | Col of pixel |  | Land cover type of pixel* |The proportion of built-up area in the surrounding 900m × 900m range is used to assess whether the pixel loss is attributable to the countryside | The abundance of species at that pixel |
+| Row of pixel | Col of pixel| Land cover type of pixel* |The proportion of built-up area in the surrounding 900m × 900m range is used to assess whether the pixel loss is attributable to the countryside |The year in which the pixel was damaged| The abundance of species at that pixel |
 
 * The types represented by different values are as follows:
 1 Cropland
