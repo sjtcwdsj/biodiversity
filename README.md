@@ -27,15 +27,15 @@ The meanings of the columns in the csv file are as follows (Each row represents 
 | Row of pixel | Col of pixel| Land cover type of pixel* |The proportion of built-up area in the surrounding 900m × 900m range is used to assess whether the pixel loss is attributable to the countryside |The year in which the pixel was damaged| The abundance of species at that pixel |
 
 * The types represented by different values are as follows:
-1 Cropland
-2 Forest
-3 Shrub 
-4 Grassland 
-5 Water
-6 Sonw/Ice 
-7 Barren 
-8 Impervious
-9 Wetland 
+1 Cropland,
+2 Forest,
+3 Shrub, 
+4 Grassland,
+5 Water,
+6 Sonw/Ice, 
+7 Barren, 
+8 Impervious,
+9 Wetland, 
 
 
 
