@@ -16,6 +16,13 @@ The code folder provides the source code for this process, based on the python 3
 
 
 
+The sample folder provides some sample code and sample data.
+|Filename|Introduce|
+|--------|--------|
+|**biodiversity**|Habitat type and range of suitable habitat elevation for endangered species based on IUCN API [http://apiv3.iucnredlist.org/api/v3/docs]|
+|**sample-totif.tif**|Example code for converting habitat loss pixels stored in csv file to tif format|
+
+
 Annual urban or rural encroachment on species habitat (in pixels) is temporarily available at
 https://drive.google.com/drive/folders/1ttj8xUfTvwarCHdzVRty5enu0K065_Eq?usp=sharing
 
@@ -31,7 +38,7 @@ patchs/IDinfo.csv stores the number of rows and columns of the raster after conv
 By storing pixel information from damaged habitats in this way, we can reduce the storage space to some extent.
 The proj4 of projection coordinate system of patchs.shp is always: **+proj=lcc +lat_0=0 +lon_0=105 +lat_1=30 +lat_2=62 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs**
 
-sample.py provides a sample code for converting csv data to tif format.
+sample-totif.tif provides a sample code for converting csv data to tif format.
 
 The meanings of the columns in the csv file are as follows (Each row represents a damaged habitat pixel):
 | row     | col     | value   |cityinfo|year|{VU/NT/EN/CR}_num|
