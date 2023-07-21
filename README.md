@@ -6,7 +6,7 @@ i) Habitat ranges of different endangered species were calculated based on habit
 
 ii) Location of species habitat loss due to urban and rural expansion from 1990 to 2020 based on CLCD and habitat range calculation.
 
-The code folder provides the source code for this process, based on the python 3.9.7.
+The code folder provides the source code for this process, based on the python 3.9.7, the python configuration is listed in environment.yml.
 
 |Filename|Introduce|
 |--------|--------|
