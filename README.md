@@ -4,6 +4,10 @@ In this study, we explore what extent urban and rural built-up land expansion ha
 
 i) Habitat ranges of different endangered species were calculated based on habitat ranges of endangered species provided by International Union for Conservation of Nature (IUCN), Landsat-derived annual China land cover dataset (CLCD) and DEM data. 
 
+**code/cuttif2.py** is the code for preprocessing and region segmentation of CLCD data set.
+**code/cutdem2.py** is the code for preprocessing and region segmentation of DEM data set.
+
+
 ii) Location of species habitat loss due to urban and rural expansion from 1990 to 2020 based on CLCD and habitat range calculation.
 
 
@@ -39,6 +43,9 @@ The meanings of the columns in the csv file are as follows (Each row represents 
 7 Barren, 
 8 Impervious,
 9 Wetland
+
+
+
 
 
 
