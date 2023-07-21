@@ -1,4 +1,4 @@
-# Biodiversity
+# The Hukou system-induced rural built-up land outpaces urban expansion in  threatening biodiversity in China
 
 In this study, we explore what extent urban and rural built-up land expansion has contributed to habitat losses of endangered species from 1990 to 2020. Our data calculation results include two parts: 
 
