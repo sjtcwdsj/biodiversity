@@ -10,23 +10,28 @@ The code folder provides the source code for this process, based on the python 3
 
 |Filename|Introduce|
 |--------|--------|
-|**code/cuttif2.py** | Preprocessing and region segmentation of CLCD data|
-|**code/cutdem2.py** | Preprocessing and region segmentation of DEM data |
+|**code/cuttif2.py** | Preprocessing and region segmentation of CLCD dataset|
+|**code/cutdem2.py** | Preprocessing and region segmentation of DEM dataset |
 |**code/dohabitat3.py**|Calculate species habitat range (Limited by storage space, the detailed grid range of species habitat is automatically generated in the form of intermediate variables during code operation and automatically deleted during code operation. Relevant codes can be deleted from the code to retain their generated results. The code takes the species richness data of the partition block as the final output result.)|
-
-
+|**code/tsum.py & code/tcut.py**|Divide urban and rural areas according to the CLCD dataset|
+|**code/loss_cropdirect.py**|Calculates the loss of habitat pixels caused by cropland expansion|
+|**code/potan_y.py & code/mergethekey.py**|The cultivated land migration amount and the threshold of cultivated land migration pixels were calculated based on the China farmland productivity potential dataset|
+|**loss_direct.py & loss_indirect.py**|Location of habitat loss pixels directly or indirectly caused by urban and rural areas|
+|**biostat.py**|Calculates species richness where habitat pixels are lost|
 
 The sample folder provides some sample code and sample data.
 |Filename|Introduce|
 |--------|--------|
 |**biodiversity**|Habitat type and range of suitable habitat elevation for endangered species based on IUCN API [http://apiv3.iucnredlist.org/api/v3/docs]|
 |**sample-totif.tif**|Example code for converting habitat loss pixels stored in csv file to tif format|
+|**thres.csv**|In order to meet the threshold specified in hypothesis 1 (method), if the proportion of built-up area in a region is greater than this threshold, the encroachment of cultivated land on habitat in the region is defined as the impact of cultivated land migration|
+|**meansum.tif**| The 900m × 900m grid data used to divide urban and rural areas, and each grid pixel value represents the proportion of built-up areas|
 
 
 Annual urban or rural encroachment on species habitat (in pixels) is temporarily available at
 https://drive.google.com/drive/folders/1ttj8xUfTvwarCHdzVRty5enu0K065_Eq?usp=sharing
 
-Habitat loss data includes two parts:
+Habitat loss data includes two parts, the main conclusion of this paper is based on the statistical analysis and drawing of these two parts:
 i) "loss_indirect_fix": indirect habitat expansion caused by urban and rural built-up land expansion.
 ii) "loss_direct_fix": direct habitat expansion caused by urban and rural built-up land expansion.
 
