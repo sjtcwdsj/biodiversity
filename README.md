@@ -23,7 +23,7 @@ The sample folder provides some sample code and sample data.
 |Filename|Introduce|
 |--------|--------|
 |**biodiversity**|Habitat type and range of suitable habitat elevation for endangered species based on IUCN API [http://apiv3.iucnredlist.org/api/v3/docs]|
-|**sample-totif.tif**|Example code for converting habitat loss pixels stored in csv file to tif format|
+|**sample-totif.py**|Example code for converting habitat loss pixels stored in csv file to tif format|
 |**thres.csv**|In order to meet the threshold specified in hypothesis 1 (method), if the proportion of built-up area in a region is greater than this threshold, the encroachment of cultivated land on habitat in the region is defined as the impact of cultivated land migration|
 |**meansum.tif**| The 900m × 900m grid data used to divide urban and rural areas, and each grid pixel value represents the proportion of built-up areas|
 
