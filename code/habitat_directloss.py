@@ -88,6 +88,8 @@ def getexcel(i,j):
         #urban and rural
         GHS=gdal_array.LoadFile(os.path.join(GHSpath,f'ur-{i}-{j}.tif'))
         #habitat
+        #If only the habitat of a single species is used in this step, the damage to different species can be counted
+        #See exampledata for the calculation result
         hab=gdal_array.LoadFile(os.path.join(Habpath,f'habitat_a{i}b{j}.tif'))
         mask=hab>0
         #distance to urban (Not used in the study)
