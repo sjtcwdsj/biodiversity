@@ -10,7 +10,7 @@ The code folder provides the source code for this process, based on the python 3
 
 |Filename|Introduce|
 |--------|--------|
-|**code/cuttif2.py** | Preprocessing and region segmentation of CLCD dataset|
+|**code/cutCLCD.py** | Preprocessing and region segmentation of CLCD dataset|
 |**code/cutdem2.py** | Preprocessing and region segmentation of DEM dataset |
 |**code/dohabitat3.py**|Calculate species habitat range (Limited by storage space, the detailed grid range of species habitat is automatically generated in the form of intermediate variables during code operation and automatically deleted during code operation. Relevant codes can be deleted from the code to retain their generated results. The code takes the species richness data of the partition block as the final output result.)|
 |**code/tsum.py & code/tcut.py**|Divide urban and rural areas according to the CLCD dataset|
