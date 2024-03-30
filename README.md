@@ -6,27 +6,16 @@ i) Habitat ranges of different endangered species were calculated based on habit
 
 ii) Location of species habitat loss due to urban and rural expansion from 1990 to 2020 based on CLCD and habitat range calculation.
 
-The code folder provides the source code for this process, based on the python 3.9.7, the python configuration is listed in environment.yml.
+The code folder provides the source code for this process, the exampledata provides the example result of this process, based on the python 3.9.7, the python configuration is listed in environment.yml.
+
 
 |Filename|Introduce|
 |--------|--------|
 |**cutCLCD.py cutDEM.py cutPOT.py cutPRO.py cutGHS.py** | Preprocessing and region segmentation of datas|
 |**gethabitat1.py gethabitat2.py**|Preprocessing and region segmentation of species datas|
 |**habitat_directloss.py habitat_indirectloss.py CF1.py CF2.py**|Calculate the direct and indirect impacts of urban and rural areas on species habitat, and see a23b32.csv in the exampledata|
-|**code/dohabitat3.py**|Calculate species habitat range (Limited by storage space, the detailed grid range of species habitat is automatically generated in the form of intermediate variables during code operation and automatically deleted during code operation. Relevant codes can be deleted from the code to retain their generated results. The code takes the species richness data of the partition block as the final output result.)|
-|**code/tsum.py & code/tcut.py**|Divide urban and rural areas according to the CLCD dataset|
-|**code/loss_cropdirect.py**|Calculates the loss of habitat pixels caused by cropland expansion|
-|**code/potan_y.py & code/mergethekey.py**|The cultivated land migration amount and the threshold of cultivated land migration pixels were calculated based on the China farmland productivity potential dataset|
-|**loss_direct.py & loss_indirect.py**|Location of habitat loss pixels directly or indirectly caused by urban and rural areas|
-|**biostat.py**|Calculates species richness where habitat pixels are lost|
-
-The sample folder provides some sample code and sample data.
-|Filename|Introduce|
-|--------|--------|
-|**biodiversity**|Habitat type and range of suitable habitat elevation for endangered species based on IUCN API [http://apiv3.iucnredlist.org/api/v3/docs]|
-|**sample-totif.py**|Example code for converting habitat loss pixels stored in csv file to tif format|
-|**thres.csv**|In order to meet the threshold specified in hypothesis 1 (method), if the proportion of built-up area in a region is greater than this threshold, the encroachment of cultivated land on habitat in the region is defined as the impact of cultivated land migration|
-|**meansum.tif**| The 900m × 900m grid data used to divide urban and rural areas, and each grid pixel value represents the proportion of built-up areas|
+|**a23b32.csv**|Example result data identifying habitat loss results at block 32, row 23, all data results are available at https://drive.google.com/drive/folders/1ttj8xUfTvwarCHdzVRty5enu0K065_Eq?usp=sharing|
+|**animalloss.xlsx**|Species statistics, which identify the habitat loss for each species, are calculated by modifying habitat_directloss.py|
 
 
 Annual urban or rural encroachment on species habitat (in pixels) is temporarily available at
