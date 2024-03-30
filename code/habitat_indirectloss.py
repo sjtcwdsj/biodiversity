@@ -10,10 +10,6 @@ import sys
 
 infopath='/data/gh/new_data/loss/info_init'
 
-#CF
-CF=pd.read_csv('/home/gh/work/BIOFIX/middata/pot_fix.csv')
-c=CF['CF'].tolist()
-
 
 
 # The proportion of cropland encroachment*CF  in each block is equal to the indirect encroachment of urban and rural areas respectively.
