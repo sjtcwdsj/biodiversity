@@ -18,42 +18,14 @@ The code folder provides the source code for this process, the exampledata provi
 |**animalloss.xlsx**|Species statistics, which identify the habitat loss for each species, are calculated by modifying habitat_directloss.py|
 
 
-Annual urban or rural encroachment on species habitat (in pixels) is temporarily available at
-https://drive.google.com/drive/folders/1ttj8xUfTvwarCHdzVRty5enu0K065_Eq?usp=sharing
-
-Habitat loss data includes two parts, the main conclusion of this paper is based on the statistical analysis and drawing of these two parts:
-i) "loss_indirect_fix": indirect habitat expansion caused by urban and rural built-up land expansion.
-ii) "loss_direct_fix": direct habitat expansion caused by urban and rural built-up land expansion.
-
-We classified the habitats of different endangered species (VU,NT,EN,CR [https://www.iucnredlist.org/](https://www.iucnredlist.org/)).
-
-The data consists of a csv file named "{ID}_id/td.csv". 
-We divided the whole of China into 447 regions, and the region ranges are stored in patchs/patchs.shp, where {ID} corresponds to the ID column in the patchs.shp property table.
-patchs/IDinfo.csv stores the number of rows and columns of the raster after converting these regions into a 30m × 30m resolution raster, which is used to locate all identified pixels.
-By storing pixel information from damaged habitats in this way, we can reduce the storage space to some extent.
-The proj4 of projection coordinate system of patchs.shp is always: **+proj=lcc +lat_0=0 +lon_0=105 +lat_1=30 +lat_2=62 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs**
-
-sample-totif.tif provides a sample code for converting csv data to tif format.
-
-The meanings of the columns in the csv file are as follows (Each row represents a damaged habitat pixel):
-| row     | col     | value   |cityinfo|year|{VU/NT/EN/CR}_num|
-| -------- | -------- | -------- |-------- |-------- |-------- |
-| Row of pixel | Col of pixel| Land cover type of pixel* |The proportion of built-up area in the surrounding 900m × 900m range is used to assess whether the pixel loss is attributable to the countryside |The year in which the pixel was damaged| The abundance of species at that pixel |
-
-\* The types represented by different values are as follows:
-1 Cropland,
-2 Forest,
-3 Shrub, 
-4 Grassland,
-5 Water,
-6 Sonw/Ice, 
-7 Barren, 
-8 Impervious,
-9 Wetland
-
-
-
-
+csv file data result description:
+|column name|Introduce|
+|--------|--------|
+|**row col**|The number of rows and columns of the 1020m×1020m grid cell|
+|**UR**|Is the pixel an urban area or a rural area, 1 for rural, 2 and 3 for urban|
+|**{Habitat type}{year}**|Direct loss of habitat within the grid cell, the UR value determines whether these losses are due to urban or rural areas|
+|**r{Habitat type}{year}**|Indirect loss of habitat caused by rural in the grid cell|
+|**u{Habitat type}{year}**|Indirect loss of habitat caused by urban in the grid cell|
 
 
 ## be continued
