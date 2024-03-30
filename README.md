@@ -12,7 +12,7 @@ The code folder provides the source code for this process, based on the python 3
 |--------|--------|
 |**cutCLCD.py cutDEM.py cutPOT.py cutPRO.py cutGHS.py** | Preprocessing and region segmentation of datas|
 |**gethabitat1.py gethabitat2.py**|Preprocessing and region segmentation of species datas|
-|**habitat_directloss.py**|Calculate the direct impacts of urban and rural areas on species habitat, and see A in the example data|
+|**habitat_directloss.py habitat_indirectloss.py**|Calculate the direct and indirect impacts of urban and rural areas on species habitat, and see A in the example data|
 |**code/dohabitat3.py**|Calculate species habitat range (Limited by storage space, the detailed grid range of species habitat is automatically generated in the form of intermediate variables during code operation and automatically deleted during code operation. Relevant codes can be deleted from the code to retain their generated results. The code takes the species richness data of the partition block as the final output result.)|
 |**code/tsum.py & code/tcut.py**|Divide urban and rural areas according to the CLCD dataset|
 |**code/loss_cropdirect.py**|Calculates the loss of habitat pixels caused by cropland expansion|
