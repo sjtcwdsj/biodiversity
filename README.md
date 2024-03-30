@@ -14,7 +14,7 @@ The code folder provides the source code for this process, the exampledata provi
 |**cutCLCD.py cutDEM.py cutPOT.py cutPRO.py cutGHS.py** | Preprocessing and region segmentation of datas|
 |**gethabitat1.py gethabitat2.py**|Preprocessing and region segmentation of species datas|
 |**habitat_directloss.py habitat_indirectloss.py CF1.py CF2.py**|Calculate the direct and indirect impacts of urban and rural areas on species habitat, and see a23b32.csv in the exampledata|
-|**a23b32.csv**|Example result data identifying habitat loss results at block 32, row 23, all data results are available at https://drive.google.com/drive/folders/1ttj8xUfTvwarCHdzVRty5enu0K065_Eq?usp=sharing|
+|**a23b32.csv**|Example result data identifying habitat loss results at block 32, row 23, all data results are available at [https://drive.google.com/drive/folders/1ttj8xUfTvwarCHdzVRty5enu0K065_Eq?usp=sharing](https://drive.google.com/drive/folders/1kOtNCfISqMBzimFmu1LglG2bgcvAYRgt?usp=drive_link)|
 |**animalloss.xlsx**|Species statistics, which identify the habitat loss for each species, are calculated by modifying habitat_directloss.py|
 
 
