@@ -29,4 +29,4 @@ csv file data result description:
 
 The **result_tif** folder holds the final result map, named in the format {A}{B}_{C}.tif, which indicates the different types of habitat (B, For = forest, Gra = grassland, Wet = wetlands, Bar = others), directly or indirectly (C) caused by urban or rural (A, u = urban, r = rural) annual loss (ha), for the period 1990 to 2020. To obtain the annual tif results of habitat loss, you can modify the contents of tifmap.py.
 
-## be continued
+The **others** folder contains some additional data that may be needed to run the code.
