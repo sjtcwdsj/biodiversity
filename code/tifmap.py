@@ -50,6 +50,7 @@ def getmap(key,ur,savepath,ty,path='/data/gh/new_data/loss/info_init'):
             return
 
         r=0
+        #Annual averages are calculated here and can be modified to calculate habitat loss for a single year
         for year in range(1990,2020):
             CF=recf_csvs[p]['CF'].tolist()
             CF=CF[year-1990]
@@ -65,7 +66,7 @@ def getmap(key,ur,savepath,ty,path='/data/gh/new_data/loss/info_init'):
                 else:
                     r+=item[f'c{key}{year}']*CF*(1-ratio)*areafix
 
-        #年均
+        #average
         r=r/30
         res[int(item['row'])][int(item['col'])]=r
         
